@@ -1,0 +1,29 @@
+{
+  "name": "parse-files-utils",
+  "version": "0.0.1",
+  "description": "Utilities to list and migrate Parse files",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parse-server-modules/parse-files-utils.git"
+  },
+  "keywords": [
+    "parse",
+    "files",
+    "utils",
+    "migration"
+  ],
+  "author": "Florent Vilmart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parse-server-modules/parse-files-utils/issues"
+  },
+  "homepage": "https://github.com/parse-server-modules/parse-files-utils#readme",
+  "dependencies": {
+    "parse": "^1.8.5",
+    "request": "^2.72.0"
+  }
+}

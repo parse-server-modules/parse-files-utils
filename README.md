@@ -10,11 +10,21 @@ This utility won't save the files anywhere else. You can save the results to a f
 ## usage
 
 ```
-$ node index.js MY_APP_ID MY_MASTER_KEY
+$ node index.js
 ```
 
-you can optionally specify a server URL
+you can optionally specify a json configuration file
 
 ```
-$ node index.js MY_APP_ID MY_MASTER_KEY MY_SERVER_URL
+$ node index.js ./config.json
+```
+
+Example `config.json`:
+
+```
+{
+  "applicationId": "PVpAyhBmNuouwPBNksRLPVpAyhBmNuouwPBNksRL",
+  "masterKey": "DQzeY9lelKLPeWQH6zhsNUqnrudyOU07hjC6g53a",
+  "serverURL": "http://parse-server.yourdomain.com/parse"
+}
 ```

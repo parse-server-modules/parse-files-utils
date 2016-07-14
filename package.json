@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/parse-server-modules/parse-files-utils#readme",
   "dependencies": {
+    "inquirer": "^1.1.2",
     "parse": "^1.8.5",
     "request": "^2.72.0"
   }

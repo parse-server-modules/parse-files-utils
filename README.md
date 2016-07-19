@@ -8,7 +8,7 @@ This utility will do the following:
 3. Rename files so that [Parse Server](https://github.com/ParsePlatform/parse-server) no longer detects that they are hosted by Parse.
 4. Update MongoDB with new file names.
 
-![Use at your own risk](use-at-your-own-risk.jpg)
+![Use at your own risk](https://github.com/mongodb/support-tools/raw/master/use-at-your-own-risk.jpg)
 
 [(image from flickr user alykat)](http://www.flickr.com/photos/80081757@N00/4271250480/)
 

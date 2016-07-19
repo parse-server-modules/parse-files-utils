@@ -8,7 +8,7 @@ module.exports = {
   mongoURL: "mongodb://<username>:<password>@mongourl.com:27017/database_name",
   serverURL: "https://api.customparseserver.com/parse",
   filesToTransfer: 'parseOnly',
-  // renameInDatabase: true,
+  renameInDatabase: false,
 
   // For filesystem configuration
   filesystemPath: './downloaded_files',

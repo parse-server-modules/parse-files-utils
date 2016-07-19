@@ -8,6 +8,30 @@ This utility will do the following:
 3. Rename files so that [Parse Server](https://github.com/ParsePlatform/parse-server) no longer detects that they are hosted by Parse.
 4. Update MongoDB with new file names.
 
+![Use at your own risk](use-at-your-own-risk.jpg)
+
+[(image from flickr user alykat)](http://www.flickr.com/photos/80081757@N00/4271250480/)
+
+DISCLAIMER
+----------
+Please note: all tools/ scripts in this repo are released for use "AS IS" **without any warranties of any kind**,
+including, but not limited to their installation, use, or performance.  We disclaim any and all warranties, either 
+express or implied, including but not limited to any warranty of noninfringement, merchantability, and/ or fitness 
+for a particular purpose.  We do not warrant that the technology will meet your requirements, that the operation 
+thereof will be uninterrupted or error-free, or that any errors will be corrected.
+
+Any use of these scripts and tools is **at your own risk**.  There is no guarantee that they have been through 
+thorough testing in a comparable environment and we are not responsible for any damage or data loss incurred with 
+their use.
+
+You are responsible for reviewing and testing any scripts you run *thoroughly* before use in any non-testing 
+environment.
+
+Thanks,  
+The *UNOFFICIAL* parse-server-modules team
+
+[(this disclaimer was originally published here)](https://github.com/mongodb/support-tools/blob/master/README.md)
+
 #### \*WARNING\*
 As soon as this script transfers files away from Parse.com hosted files (and renames them in the database) 
 any clients that use api.parse.com will no longer be able to access the files. 

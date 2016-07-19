@@ -1,10 +1,16 @@
-var appID = process.argv[2];
-var masterKey = process.argv[3];
-var serverURL = process.argv[4];
+var path = require('path');
+var configFilePath = process.argv[2];
+var config = {};
 
-if (!appID || !masterKey) {
-  process.stderr.write('An appId and a masterKey are required\n');
-  process.exit(1);
+if (configFilePath) {
+  configFilePath = path.resolve(configFilePath);
+
+  try {
+    config = require(configFilePath);
+  } catch(e) {
+    console.log('Cannot load '+configFilePath);
+    process.exit(1);  
+  }
 }
 
-var utils = require('./lib')(appID, masterKey, serverURL);
+var utils = require('./lib')(config);

@@ -57,10 +57,16 @@ $ npm start config.js
 
 * `applicationId`: Parse application id.
 * `masterKey`: Parse master key.
-* `mongoURL`: MongoDB connection url.
-* `serverURL`: The URL for the Parse server (default: http://api.parse.com/1).
-* `filesToTransfer`: Which files to transfer. Accepted options: `parseOnly`, `parseServerOnly`, `all`.
+* `serverURL`: The URL for the Parse server (default: http://api.parse.com/1). 
+This is used to with `applicationId` and `masterKey` to get the schema and fetch all files/objects.
 * `renameInDatabase` (boolean): Whether or not to rename files in MongoDB.
+* `mongoURL`: MongoDB connection url. 
+Direct access to the database is needed because Parse SDK doesn't allow direct writing to file fields.
+* `filesToTransfer`: Which files to transfer. 
+Accepted options:
+  * `"parseOnly"`: only process files with a filename that starts with "tfss-" or matches Parse's legacy file name format.
+  * `"parseServerOnly"`: only process files with a filename that **does not** start with "tfss-" nor match Parse's legacy file name format.
+  * `"all"`: process all files.
 * `filesAdapter`: A Parse Server file adapter with a function for `createFile(filename, data)`  
 (ie. [parse-server-fs-adapter](https://github.com/parse-server-modules/parse-server-fs-adapter),
 [parse-server-s3-adapter](https://github.com/parse-server-modules/parse-server-s3-adapter),

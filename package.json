@@ -24,10 +24,11 @@
   "homepage": "https://github.com/parse-server-modules/parse-files-utils#readme",
   "dependencies": {
     "async": "^2.0.0",
-    "aws-sdk": "^2.4.7",
-    "gcloud": "^0.36.0",
     "inquirer": "^1.1.2",
     "parse": "^1.8.5",
+    "parse-server-fs-adapter": "^1.0.0",
+    "parse-server-gcs-adapter": "^1.0.0",
+    "parse-server-s3-adapter": "^1.0.4",
     "request": "^2.72.0"
   }
 }

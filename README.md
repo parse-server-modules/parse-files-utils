@@ -22,11 +22,11 @@ and Parse Server [issue #1582](https://github.com/ParsePlatform/parse-server/iss
 
 ## Usage
 
-The quickest way to get started is to run `node index.js` and follow the command prompts.
+The quickest way to get started is to run `npm start` and follow the command prompts.
 
 You can optionally specify a js/json configuration file (see [config.example.js](./config.example.js)).
 ```
-$ node index.js config.js
+$ npm start config.js
 ```
 
 ### Available configuration options
@@ -37,10 +37,13 @@ $ node index.js config.js
 * `serverURL`: The URL for the Parse server (default: http://api.parse.com/1).
 * `filesToTransfer`: Which files to transfer. Accepted options: `parseOnly`, `parseServerOnly`, `all`.
 * `renameInDatabase` (boolean): Whether or not to rename files in MongoDB.
+* `filesAdapter`: A Parse Server file adapter with a function for `createFile(filename, data)`  
+(ie. [parse-server-fs-adapter](https://github.com/parse-server-modules/parse-server-fs-adapter),
+[parse-server-s3-adapter](https://github.com/parse-server-modules/parse-server-s3-adapter),
+[parse-server-gcs-adapter](https://github.com/parse-server-modules/parse-server-gcs-adapter)).
 * `filesystemPath`: The path/directory to save files to when transfering to filesystem.
 * `aws_accessKeyId`: AWS access key id.
 * `aws_secretAccessKey`: AWS secret access key.
-* `aws_profile`: AWS credentials profile. Can be specified in lieu of `aws_accessKeyId` and `aws_secretAccessKey`.
 * `aws_bucket`: S3 bucket name.
 * `gcs_projectId`: GCS project id.
 * `gcs_keyFilename`: GCS key filename (ie. `credentials.json`).

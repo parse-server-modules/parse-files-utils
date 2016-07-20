@@ -4,8 +4,9 @@
   "description": "Utilities to list and migrate Parse files",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
-    "test": "echo 'build some tests!' && exit 1"
+    "start": "node index.js",
+    "test": "echo 'build some tests!' && exit 0",
+    "posttest": "istanbul cover lib/*"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,6 @@
     "request": "^2.72.0"
   },
   "devDependencies": {
-    "codecov": "^1.0.1"
+    "istanbul": "^0.4.4"
   }
 }

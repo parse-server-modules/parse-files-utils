@@ -9,6 +9,7 @@ module.exports = {
   serverURL: "https://api.customparseserver.com/parse",
   filesToTransfer: 'parseOnly',
   renameInDatabase: false,
+  transferTo: 'filesystem',
 
   // For filesystem configuration
   filesystemPath: './downloaded_files',
@@ -17,6 +18,7 @@ module.exports = {
   aws_accessKeyId: "ACCESS_KEY_ID",
   aws_secretAccessKey: "SECRET_ACCESS_KEY",
   aws_bucket: "BUCKET_NAME",
+  aws_bucketPrefix: "",
 
   // For GCS configuration
   gcs_projectId: "GCS_PROJECT_ID",

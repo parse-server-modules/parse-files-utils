@@ -1,6 +1,5 @@
 language: node_js
 node_js:
 - '4.3'
-- '6.1'
 after_success:
 - bash <(curl -s https://codecov.io/bash)

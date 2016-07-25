@@ -59,6 +59,8 @@ $ npm start config.js
 * `masterKey`: Parse master key.
 * `serverURL`: The URL for the Parse server (default: http://api.parse.com/1). 
 This is used to with `applicationId` and `masterKey` to get the schema and fetch all files/objects.
+* `renameFiles` (boolean): Whether or not to rename Parse hosted files. 
+This removes the "tfss-" or legacy Parse filename prefix before saving with the new file adapter.
 * `renameInDatabase` (boolean): Whether or not to rename files in MongoDB.
 * `mongoURL`: MongoDB connection url. 
 Direct access to the database is needed because Parse SDK doesn't allow direct writing to file fields.

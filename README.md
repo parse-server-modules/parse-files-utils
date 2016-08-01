@@ -84,3 +84,51 @@ Accepted options:
 * `gcs_keyFilename`: GCS key filename (ie. `credentials.json`).
 * `gcs_bucket`: GCS bucket name.
 * `asyncLimit`: The number of files to process at the same time (default: 5).
+
+
+## Parse File Migrations
+
+If you need to migrate files from hosted Parse.com to self-hosted Parse Server,
+you should follow one of the below strategies. 
+Given [ParsePlatform/parse-server#1582](https://github.com/ParsePlatform/parse-server/issues/1582), 
+there will not be any updates to api.parse.com. This leaves two options for the file migration. 
+Each one has its own set of advantages and disadvantages.
+
+**Option 1**: 
+"Supporting clients that access via api.parse.com is *not* important"
+* File utils configuration:
+  * `filesToTransfer`: 'parseOnly'
+  * `renameFiles`: true
+  * `renameInDatabase`: true
+* Parse Server configuration: keep using `fileKey` in settings
+* After file migration:
+  * api.parse.com clients:
+    * can not see all previously uploaded files
+    * can not see files uploaded by Parse Server clients
+    * can see new files uploaded by api.parse.com clients
+  * Parse Server clients:
+    * can see all previously uploaded files
+    * can see new files uploaded by api.parse.com clients
+    * can see new files uploaded by Parse Server clients
+* Additional steps required:
+  * Run file migration again after all clients switch to Parse Server or before Jan 28
+
+**Option 2**: 
+"Supporting clients that access via api.parse.com is important"
+* File utils configuration:
+  * `filesToTransfer`: 'parseOnly'
+  * `renameFiles`: false
+  * `renameInDatabase`: false
+* Parse Server configuration: 
+  * Use version >= 2.2.16
+  * remove `fileKey` from settings 
+* After file migration:
+  * api.parse.com clients:
+    * can see all previously uploaded files
+    * can not see files uploaded by Parse Server clients
+  * Parse Server clients:
+    * can see all migrated files
+    * can not see new files uploaded by api.parse.com clients
+* Additional steps required:
+  * Run file migration again after all clients switch to Parse Server or before Jan 28
+

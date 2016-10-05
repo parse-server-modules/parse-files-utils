@@ -11,6 +11,9 @@ module.exports = {
   renameInDatabase: false,
   transferTo: 'filesystem',
 
+  //added by Loungebuddy to log and subsequenly skip reupload for successful upload
+  successLogFilePath: './previouslyUploaded.txt',
+
   // For filesystem configuration
   filesystemPath: './downloaded_files',
 

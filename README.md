@@ -44,7 +44,7 @@ and Parse Server [issue #1582](https://github.com/ParsePlatform/parse-server/iss
 ## Installation
 
 1. Clone the repo: `git clone git@github.com:parse-server-modules/parse-files-utils.git`
-2. cd into repo: `cd parse-file-utils`
+2. cd into repo: `cd parse-files-utils`
 3. Install dependencies: `npm install`
 
 ## Usage

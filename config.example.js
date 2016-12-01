@@ -8,8 +8,19 @@ module.exports = {
   mongoURL: "mongodb://<username>:<password>@mongourl.com:27017/database_name",
   serverURL: "https://api.customparseserver.com/parse",
   filesToTransfer: 'parseOnly',
+  renameFiles: false, 
   renameInDatabase: false,
   transferTo: 'filesystem',
+
+  // If false, will migrate files array as well
+  // Note: The parameters renameFiles and renameInDatabase must be true
+  onlyFiles: false, 
+  
+  // Extra collection and fields that use files array, use to migrate them as well
+  // Note: Use if onlyFiles equals false
+  extraFields: {
+    collectionName: ['fieldNameOne', 'fieldNameTwo']
+  },
 
   // For filesystem configuration
   filesystemPath: './downloaded_files',

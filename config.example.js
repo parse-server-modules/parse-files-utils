@@ -25,6 +25,11 @@ module.exports = {
   gcs_keyFilename: "credentials.json",
   gcs_bucket: "BUCKET_NAME",
 
+  // For Azure configuration
+  azure_account: "STORAGE_ACCOUNT_NAME",
+  azure_container: "BLOB_CONTAINER",
+  azure_accessKey: "ACCESS_KEY",
+
   // Or set filesAdapter to a Parse Server file adapter
   // filesAdapter: new FileAdapter({
   //  filesSubDirectory: './downloaded_files'

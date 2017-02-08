@@ -1,6 +1,4 @@
-# parse-files-utils
-[![Build Status](https://travis-ci.org/parse-server-modules/parse-files-utils.svg?branch=master)](https://travis-ci.org/parse-server-modules/parse-files-utils)
-[![codecov](https://codecov.io/gh/parse-server-modules/parse-files-utils/branch/master/graph/badge.svg)](https://codecov.io/gh/parse-server-modules/parse-files-utils)
+# parse-files-utils [Archive]
 
 Utilities to list and [~~migrate~~](https://github.com/parse-server-modules/parse-files-utils/pull/67#issuecomment-278494589) Parse files.
 
@@ -8,7 +6,7 @@ Utilities to list and [~~migrate~~](https://github.com/parse-server-modules/pars
 
 This utility will do the following:
 
-1. Get all files across all classess in a Parse database.
+1. Get all files across all classes in a Parse database.
 2. Print file URLs to console OR transfer to S3, GCS, or filesystem.
 3. Rename files so that [Parse Server](https://github.com/ParsePlatform/parse-server) no longer detects that they are hosted by Parse.
 4. Update MongoDB with new file names.

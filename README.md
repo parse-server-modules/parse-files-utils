@@ -2,7 +2,9 @@
 [![Build Status](https://travis-ci.org/parse-server-modules/parse-files-utils.svg?branch=master)](https://travis-ci.org/parse-server-modules/parse-files-utils)
 [![codecov](https://codecov.io/gh/parse-server-modules/parse-files-utils/branch/master/graph/badge.svg)](https://codecov.io/gh/parse-server-modules/parse-files-utils)
 
-Utilities to list and migrate Parse files.
+Utilities to list and [~~migrate~~](https://github.com/parse-server-modules/parse-files-utils/pull/67#issuecomment-278494589) Parse files.
+
+**File migration is [not available anymore](https://github.com/parse-server-modules/parse-files-utils/pull/67#issuecomment-278494589)** 
 
 This utility will do the following:
 

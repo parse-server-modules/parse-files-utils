@@ -1,8 +1,8 @@
 # parse-files-utils [Archive]
 
-Utilities to list and [~~migrate~~](https://github.com/parse-server-modules/parse-files-utils/pull/67#issuecomment-278494589) Parse files.
+Utilities to list and ~~migrate~~ Parse files.
 
-**File migration is [not available anymore](https://github.com/parse-server-modules/parse-files-utils/pull/67#issuecomment-278494589)** 
+**File migration is not available anymore as the hosted Parse service has now shut down**
 
 This utility will do the following:
 

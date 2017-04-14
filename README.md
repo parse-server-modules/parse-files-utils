@@ -1,5 +1,7 @@
 # parse-files-utils [Archive]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/parse-server-modules/parse-files-utils.svg)](https://greenkeeper.io/)
+
 Utilities to list and ~~migrate~~ Parse files.
 
 **File migration is not available anymore as the hosted Parse service has now shut down**
